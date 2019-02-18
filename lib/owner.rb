@@ -62,18 +62,21 @@ class Owner
   end   
 
   def sell_pets
-    pets.each { |pet, mood| pet.each {|name| name.mood = "nervous" }
+    pets.each {
+      |pet, mood| pet.each {|name| name.mood = "nervous" } 
+      pets.clear
+    }
   end 
   
   
-        pets.each do |key, pet_breed| 
-        pet_breed.each {|pet| pet.mood = "nervous"}
-        pet_breed.clear
+    #     pets.each do |key, pet_breed| 
+    #     pet_breed.each {|pet| pet.mood = "nervous"}
+    #     pet_breed.clear
       
       
-      @pets.collect do |type, pets|
-      @pets[type].collect {|pet| pet.mood= "nervous"}
-    end
-    @pets.clear
+    #   @pets.collect do |type, pets|
+    #   @pets[type].collect {|pet| pet.mood= "nervous"}
+    # end
+    # @pets.clear
   
 end
