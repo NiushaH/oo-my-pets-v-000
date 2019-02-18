@@ -5,10 +5,10 @@ class Owner
   
   @@all = []
   
-  def initialize(name)
+  def initialize(name, species)
     @name = name
     @@all << self
-    @species = []
+    @species = species
   end
 
   def self.all
