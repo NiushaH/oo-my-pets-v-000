@@ -50,7 +50,7 @@ class Owner
 
 
   def walk_dogs
-    :dog.mood = "happy"
+    :dog.@mood = "happy"
   end   
 
 end
