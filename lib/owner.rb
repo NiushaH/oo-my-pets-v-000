@@ -29,7 +29,7 @@ class Owner
   end 
 
   def buy_fish
-    
+    "Bubbles"
   end
 
 
